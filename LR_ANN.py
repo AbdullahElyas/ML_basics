@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[34]:
+
 
 
 import numpy as np
@@ -13,13 +13,13 @@ x=pd.read_csv(dir)
 x.head()
 
 
-# In[35]:
+
 
 
 x.corr()
 
 
-# In[36]:
+
 
 
 x.isna().sum()
@@ -27,7 +27,6 @@ x.ffill(inplace=True)
 x.isna().sum()
 
 
-# In[37]:
 
 
 x1 = x['Duration'].values
@@ -35,7 +34,6 @@ y1 = x['Calories'].values
 N=len(x1)
 
 
-# In[38]:
 
 
 #Splitting Data into train and validation
@@ -59,7 +57,7 @@ plt.ylabel('y_val')
 plt.show(block=True)
 
 
-# In[39]:
+
 
 
 #training loop
@@ -75,7 +73,7 @@ print(w)
 print(b)
 
 
-# In[40]:
+
 
 
 for i in range(20):
@@ -143,7 +141,7 @@ for i in range(20):
     plt.pause(1)
 
 
-# In[ ]:
+
 
 
 
