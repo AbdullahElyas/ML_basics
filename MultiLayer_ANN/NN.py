@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+
 
 
 import numpy as np
@@ -9,16 +9,10 @@ import pandas as pd
 from matplotlib import pyplot as plt
 
 
-# In[2]:
-
 
 data=pd.read_csv('C:\\Users\\Abdullah-PC\\Desktop\\digit-recognizer\\train.csv')
 data.head(10)
 A=data.empty
-
-
-# In[3]:
-
 
 data = np.array(data)
 
@@ -36,8 +30,6 @@ Y_train = data_train[0]
 X_train = data_train[1:n]
 X_train = X_train / 255.
 
-
-# In[5]:
 
 
 def init_params():
