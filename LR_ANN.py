@@ -45,7 +45,7 @@ x_train, y_train = x1[idx_train],y1[idx_train]
 x_val, y_val = x1[idx_test],y1[idx_test]
 
 
-#plotting tain and val data
+#plotting train and val data
 plt.figure('1')
 plt.scatter(x_train,y_train)
 plt.xlabel('x_train')
